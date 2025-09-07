@@ -1,0 +1,76 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 16px 16px;
+}
+
+.header-right .btn-new-item {
+  background-color: #0013fe;
+}
+
+.manage-task-app {
+  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+
+  .todo-column {
+    background-color: #e6ecf0;
+    padding: 12px;
+
+    .todo-column-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .label {
+        font-size: 15px;
+        font-weight: 500;
+      }
+
+      .count {
+        background-color: #d5d5d5;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: block;
+        text-align: center;
+        line-height: 30px;
+        font-size: 13px;
+        font-weight: 500;
+      }
+      .todo-column-header-left,
+      .todo-column-header-right {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .btn-plus,
+      .btn-ellipsis {
+        background-color: #d5d5d5;
+        padding: 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: block;
+        text-align: center;
+        line-height: 0px;
+        cursor: pointer;
+      }
+    }
+
+    .todo-column-body {
+      display: flex;
+      flex-direction: column;
+      margin-top: 16px;
+      gap: 16px;
+    }
+  }
+}

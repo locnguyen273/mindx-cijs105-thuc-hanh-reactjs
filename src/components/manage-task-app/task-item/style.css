@@ -1,0 +1,67 @@
+.task-item {
+  background-color: #fff;
+  border-radius: 8px;
+
+  .task-item-header {
+    padding: 12px 12px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .task-item-header .left {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .task-item-header .btn-edit-task {
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    background: transparent;
+  }
+
+  .task-item-header .btn-edit-task:hover {
+    border-color: transparent;
+  }
+
+  .task-item-body {
+    padding: 12px;
+  }
+
+  .task-item-body .btn-mindx-school {
+    min-height: 26px;
+    background: #0013FE;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 12px;
+    padding: 8px 16px;
+    margin: 8px 0 0;
+  }
+
+  .task-item-body .description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .task-item-footer {
+    padding: 12px;
+    border-top: 1px solid #d5d5d5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .list-file-attach {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      justify-content: center;
+      min-width: 120px;
+      max-width: 150px;
+    }
+  }
+}

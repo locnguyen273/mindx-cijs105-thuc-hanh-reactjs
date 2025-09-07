@@ -1,0 +1,36 @@
+.mindx-example {
+  background-color: lightgray;
+  width: 100%;
+  height: calc(100vh - 56px);
+}
+
+.left {
+  width: 30%;
+  min-width: 200px;
+  background-color: #fff;
+}
+
+.left-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 16px;
+  margin: 48px 16px 0;
+}
+
+.image-user {
+  width: 150px;
+  height: 150px;
+}
+
+.right {
+  width: 70%;
+  background-color: #fff;
+  padding: 16px;
+}
+
+.ant-tabs-content-holder {
+  max-height: 550px;
+  overflow-y: auto;
+}
